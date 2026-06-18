@@ -19,6 +19,7 @@ hl.bind("SUPER + Return", hl.dsp.exec_cmd(terminal))
 
 
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
+hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd(office))
 
 
 
