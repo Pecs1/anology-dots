@@ -5,13 +5,16 @@ hl.config({
         kb_model   = "",
         kb_options = "grp:win_space_toggle",
         kb_rules   = "",
-
+        numlock_by_default = true,
+        repeat_delay = 250,
+        repeat_rate = 35,
         follow_mouse = 1,
-
-        sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
-
+        off_window_axis_events = 2,
         touchpad = {
-            natural_scroll = false,
+            natural_scroll = true,
+            disable_while_typing = true,
+            clickfinger_behavior = true,
+            scroll_factor = 0.7
         },
     },
 })

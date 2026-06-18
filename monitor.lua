@@ -1,3 +1,12 @@
+-- yoinked from https://github.com/end-4/dots-hyprland
+-- later on i plan to rewrite it ^^
+
+
+
+
+-- https://wiki.hypr.land/Configuring/Basics/Variables/
+
+
 -- MONITOR CONFIG
 hl.monitor({
     output = "",
@@ -21,20 +30,21 @@ hl.gesture({
     direction = "horizontal",
     action = "workspace"
 })
-hl.gesture({
-    fingers = 4,
-    direction = "up",
-    action = function()
-        hl.dispatch(hl.dsp.global("quickshell:overviewWorkspacesToggle"))
-    end
-})
-hl.gesture({
-    fingers = 4,
-    direction = "down",
-    action = function()
-        hl.dispatch(hl.dsp.global("quickshell:overviewWorkspacesToggle"))
-    end
-})
+-- can disable, coz im not using qs... yet... :P
+-- hl.gesture({
+    -- fingers = 4,
+    -- direction = "up",
+    -- action = function()
+        -- hl.dispatch(hl.dsp.global("quickshell:overviewWorkspacesToggle"))
+    -- end
+-- })
+-- hl.gesture({
+--     fingers = 4,
+--     direction = "down",
+--     action = function()
+--         hl.dispatch(hl.dsp.global("quickshell:overviewWorkspacesToggle"))
+--     end
+-- })
 
 hl.config({
     gestures = {
@@ -253,23 +263,6 @@ hl.animation({
 })
 
 hl.config({
-    input = {
-        kb_layout = "us",
-        numlock_by_default = true,
-        repeat_delay = 250,
-        repeat_rate = 35,
-
-        follow_mouse = 1,
-        off_window_axis_events = 2,
-
-        touchpad = {
-            natural_scroll = true,
-            disable_while_typing = true,
-            clickfinger_behavior = true,
-            scroll_factor = 0.7
-        }
-    },
-
     misc = {
         disable_hyprland_logo = true,
         disable_splash_rendering = true,

@@ -1,6 +1,6 @@
 -- aliases to programs i use
 global terminal    = "kitty"
-global fileManager = "dolphin"
+global fileManager = "vifm"
 global menu        = "hyprlauncher"
 global web         = "firefox"
 global codeEditor  = "vscodium"
