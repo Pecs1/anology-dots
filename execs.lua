@@ -1,4 +1,7 @@
-require("config")
+require("workspace_rules")
+
+-- its a bit fucked, but i think i can still copy paste :P
+hl.exec_cmd("pkill wl-paste; wl-paste --watch cliphist store")
 
 -- See https://wiki.hypr.land/Configuring/Basics/Autostart/
 hl.on("hyprland.start", function ()
@@ -7,13 +10,5 @@ hl.on("hyprland.start", function ()
      hl.exec_cmd("hypridle")
 
      -- misc
-     hl.exec_cmd("wl-paste --type text --watch cliphist store")
-     hl.exec_cmd("wl-paste --type image --watch cliphist store")
      hl.exec_cmd("easyeffects --hide-window --service-mode")
-     
-     -- user
-     hl.exec_cmd(web)
-     hl.exec_cmd(discord)
-     hl.exec_cmd(music)
-     
 end)
