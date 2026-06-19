@@ -12,6 +12,7 @@ hl.bind("SUPER + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 hl.bind("SUPER + L", hl.dsp.exec_cmd("hyprlock"))
 
 hl.bind("SUPER + C", hl.dsp.exec_cmd(codeEditor))
+hl.bind("SUPER + V", hl.dsp.exec_cmd("cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"))
 
 hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd(menu))
 hl.bind("SUPER + Return", hl.dsp.exec_cmd(terminal))
@@ -42,8 +43,8 @@ for i = 1, 10 do
 end
 
 -- Example special workspace (scratchpad)
-hl.bind("SUPER + S",         hl.dsp.workspace.toggle_special("magic"))
-hl.bind("SUPER + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+-- hl.bind("SUPER + S",         hl.dsp.workspace.toggle_special("magic"))
+-- hl.bind("SUPER + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
 hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
