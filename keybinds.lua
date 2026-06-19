@@ -25,7 +25,7 @@ hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd(office))
 
 
 
--- Move focus with mainMod + arrow keysc
+-- Move focus with SUPER + arrow keysc
 hl.bind("SUPER + left",  hl.dsp.focus({ direction = "left" }))
 hl.bind("SUPER + right", hl.dsp.focus({ direction = "right" }))
 hl.bind("SUPER + up",    hl.dsp.focus({ direction = "up" }))
@@ -34,8 +34,8 @@ hl.bind("SUPER + down",  hl.dsp.focus({ direction = "down" }))
 
 hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("systemctl suspend || loginctl suspend")) -- Sleep
 
--- Switch workspaces with mainMod + [0-9]
--- Move active window to a workspace with mainMod + SHIFT + [0-9]
+-- Switch workspaces with SUPER + [0-9]
+-- Move active window to a workspace with SUPER + SHIFT + [0-9]
 for i = 1, 10 do
     local key = i % 10 -- 10 maps to key 0
     hl.bind("SUPER + " .. key,             hl.dsp.focus({ workspace = i}))
@@ -46,11 +46,11 @@ end
 -- hl.bind("SUPER + S",         hl.dsp.workspace.toggle_special("magic"))
 -- hl.bind("SUPER + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
--- Scroll through existing workspaces with mainMod + scroll
+-- Scroll through existing workspaces with SUPER + scroll
 hl.bind("SUPER + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
 hl.bind("SUPER + mouse_up",   hl.dsp.focus({ workspace = "e-1" }))
 
--- Move/resize windows with mainMod + LMB/RMB and dragging
+-- Move/resize windows with SUPER + LMB/RMB and dragging
 hl.bind("SUPER + mouse:272", hl.dsp.window.drag(),   { mouse = true })
 hl.bind("SUPER + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
