@@ -19,7 +19,7 @@ hl.bind("SUPER + Return", hl.dsp.exec_cmd(terminal))
 
 
 
-hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
+hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd([[sh -c 'grim -g "$(slurp -d)" - | tee ~/Pictures/Screenshots/$(date +%Y-%m-%d_%H-%M-%S).png | wl-copy']]))
 hl.bind("SUPER + SHIFT + C", hl.dsp.exec_cmd(office))
 
 
