@@ -3,8 +3,7 @@
 
 require("perms")
 require("monitor")
-require("workspace_rules")
-require("window_rules")
+require("rules")
 require("input")
 require("keybinds")
 require("execs")
@@ -12,7 +11,7 @@ require("execs")
 -- conf to use matugen
 -- conf to use awww
 -- start to use more nvim (neovim)
--- start to use/learn vifm as the default filemanager
+-- start to use/learn nnn? as the default filemanager
 -- maybe some install script?
 
 -------------------------------
@@ -23,16 +22,6 @@ require("execs")
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
-
-
------------------------
------ PERMISSIONS -----
------------------------
-
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Permissions/
--- Please note permission changes here require a Hyprland restart and are not applied on-the-fly
--- for security reasons
-
 
 
 ----------------
