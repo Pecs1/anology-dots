@@ -1,8 +1,7 @@
 -- https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- https://wiki.hypr.land/Configuring/Basics/Window-Rules/
 
-
-require("config")
+require("custom.config")
 
 -- idk if i like this behavior or not...
 hl.workspace_rule({ 

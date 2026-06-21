@@ -1,4 +1,4 @@
-require("config")
+require("custom.config")
 
 hl.bind("SUPER + Q", hl.dsp.window.close())
 hl.bind("SUPER + W", hl.dsp.exec_cmd(web))

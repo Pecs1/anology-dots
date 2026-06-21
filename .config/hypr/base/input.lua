@@ -1,9 +1,9 @@
 hl.config({
     input = {
-        kb_layout  = "gb,sk,us",
-        kb_variant = ",qwerty,",
+        kb_layout  = "us",
+        kb_variant = "",
         kb_model   = "",
-        kb_options = "grp:win_space_toggle",
+        kb_options = "",
         kb_rules   = "",
         numlock_by_default = true,
         repeat_delay = 250,

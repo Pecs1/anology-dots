@@ -1,12 +1,15 @@
 -- Refer to the wiki for more information.
 -- https://wiki.hypr.land/Configuring/Start/
 
-require("perms")
-require("monitor")
-require("rules")
-require("input")
-require("keybinds")
-require("execs")
+local config = os.getenv("HOME") .. "/.config/hypr"
+package.path = package.path .. ";" .. config .. "?.lua"
+
+require("base.perms")
+require("base.monitor")
+require("base.rules")
+require("base.input")
+require("base.keybinds")
+require("base.execs")
 
 -- conf to use matugen
 -- conf to use awww
