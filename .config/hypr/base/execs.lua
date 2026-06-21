@@ -1,5 +1,3 @@
-require("custom.config")
-
 -- its a bit fucked, but i think i can still copy paste :P
 hl.exec_cmd("pkill wl-paste; wl-paste --watch cliphist store")
 

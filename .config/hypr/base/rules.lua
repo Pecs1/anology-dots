@@ -1,7 +1,7 @@
 -- https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- https://wiki.hypr.land/Configuring/Basics/Window-Rules/
 
-require("custom.config")
+require("custom.aliases")
 
 -- idk if i like this behavior or not...
 hl.workspace_rule({ 
