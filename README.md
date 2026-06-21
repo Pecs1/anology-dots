@@ -2,7 +2,7 @@
 
 My ~~ass~~ nice looking dots
 
-[!Important] 
+> [!Important] 
 > Still work in progress, so i wouldnt personally use it... yet
 
 ### Inspiration
