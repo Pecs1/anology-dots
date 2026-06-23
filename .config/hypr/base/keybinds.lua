@@ -14,7 +14,7 @@ hl.bind("SUPER + C", hl.dsp.exec_cmd(codeEditor))
 hl.bind("SUPER + V", hl.dsp.exec_cmd("cliphist list | fuzzel --dmenu | cliphist decode | wl-copy"))
 
 hl.bind("SUPER + SUPER_L", hl.dsp.exec_cmd(menu))
-hl.bind("SUPER + Return", hl.dsp.exec_cmd(terminal .. "|| kitty"))
+hl.bind("SUPER + Return", hl.dsp.exec_cmd(terminal .. " || kitty"))
 
 
 
