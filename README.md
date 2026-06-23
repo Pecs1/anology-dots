@@ -2,8 +2,9 @@
 
 My ~~ass~~ nice looking dots
 
-> [!Important] 
-> Still work in progress, so i wouldnt personally use it... yet
+> [!Warning] 
+> After some bit of thinking... i decided to start from the begining
+> Also this branch will be purely just for archive purposes and likely wont be used/refenreced
 
 ### Inspiration
 Mostly [end4 - ii](https://github.com/end-4/dots-hyprland)
