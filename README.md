@@ -2,8 +2,9 @@
 
 My ~~ass~~ nice looking dots
 
-> [!Warning] 
+> [!Caution] 
 > After some bit of thinking... i decided to start from the begining
+>
 > Also this branch will be purely just for archive purposes and likely wont be used/refenreced
 
 ### Inspiration
