@@ -9,4 +9,4 @@ My ~~ass~~ nice looking dots
 Mostly [end4 - ii](https://github.com/end-4/dots-hyprland)
 
 ## License
-These configs are licensed under MIT License
+These configs are licensed under GPL License
