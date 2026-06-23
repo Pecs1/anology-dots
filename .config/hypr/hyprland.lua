@@ -1,9 +1,17 @@
 -- Refer to the wiki for more information.
 -- https://wiki.hypr.land/Configuring/Start/
 
-local config = os.getenv("HOME") .. "/.config/hypr"
-package.path = package.path .. ";" .. config .. "?.lua"
+-- internal
+require("base.lib")
 
+-- env
+require("base.env")
+
+if file_exist(HOME .. "/.config/hypr/custom/env.lua") then
+    require("custom.env")
+end
+
+-- default
 require("base.perms")
 require("base.monitor")
 require("base.rules")
@@ -17,23 +25,26 @@ require("base.execs")
 -- start to use/learn nnn? as the default filemanager
 -- maybe some install script?
 
--------------------------------
----- ENVIRONMENT VARIABLES ----
--------------------------------
+if file_exist(HOME .. "/.config/hypr/custom/perms.lua") then
+    require("custom.perms")
+end
 
--- See https://wiki.hypr.land/Configuring/Advanced-and-Cool/Environment-variables/
+if file_exist(HOME .. "/.config/hypr/custom/monitor.lua") then
+    require("custom.monitor")
+end
 
-hl.env("XCURSOR_SIZE", "24")
-hl.env("HYPRCURSOR_SIZE", "24")
+if file_exist(HOME .. "/.config/hypr/custom/rules.lua") then
+    require("custom.rules")
+end
 
+if file_exist(HOME .. "/.config/hypr/custom/input.lua") then
+    require("custom.input")
+end
 
-----------------
-----  MISC  ----
-----------------
+if file_exist(HOME .. "/.config/hypr/custom/keybinds.lua") then
+    require("custom.keybinds")
+end
 
-hl.config({
-    misc = {
-        force_default_wallpaper = -1,    -- Set to 0 or 1 to disable the anime mascot wallpapers
-        disable_hyprland_logo   = false, -- If true disables the random hyprland logo / anime girl background. :(
-    },
-})
+if file_exist(HOME .. "/.config/hypr/custom/execs.lua") then
+    require("custom.execs")
+end
