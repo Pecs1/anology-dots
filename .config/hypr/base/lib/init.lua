@@ -17,3 +17,10 @@ end
 function create_file(path)
      hl.exec_cmd("touch " .. path)
 end
+
+function is_nvidia()
+     local handle = io.popen("lspci | grep -qi nvidia && echo 'T' || echo 'F'")
+     local result = handle:read("*a")
+     handle:close()
+     return result:match("T") ~= nil
+end
