@@ -1,9 +1,6 @@
 -- Refer to the wiki for more information.
 -- https://wiki.hypr.land/Configuring/Start/
 
--- internal
-require("base.lib")
-
 -- env
 require("base.env")
 
